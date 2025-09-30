@@ -96,7 +96,7 @@ def get_perplexity_recommendation(user_preference, products):
             'https://api.perplexity.ai/chat/completions',
             headers=headers,
             json=data,
-            timeout=30
+            timeout=10
         )
         
         if response.status_code == 200:
